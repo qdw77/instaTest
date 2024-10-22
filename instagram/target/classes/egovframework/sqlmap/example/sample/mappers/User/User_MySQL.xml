@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper
+	namespace="UserDAO">
+	
+<!-- 	<select id="selectUserLoginInfo"  parameterType="java.util.HashMap" resultType="java.util.HashMap">
+	
+	select 
+	
+	
+	
+	</select> -->
+	
+	<insert id="insertUser" parameterType="java.util.HashMap">
+	
+		INSERT INTO tb_user (
+		    user_id,
+		    user_pw,
+		    user_name,
+		    user_email,
+		    create_id,
+		    update_id
+		) VALUES (
+		    #{userId},     
+		    #{userPw},      
+		    #{userName},    
+		    #{userEmail},   
+		    #{createId},   
+		    #{updateId}     
+		);
+
+	</insert>
+	
+<!-- 	<select id="selectUserInfo" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+	select user_idx AS userIdx,
+			user_id AS id,
+			user_name AS name,
+			user_email AS email,
+			
+	
+	
+	
+	
+	</select> -->
+	
+	
+	
+	
+	
+</mapper>
